@@ -55,7 +55,7 @@
       font-weight: 600;
       margin: 25px 0 15px 0;
       padding-bottom: 5px;
-      
+      border-bottom: 1px solid #e0e0e0;
     }
     
     h2:first-of-type {
@@ -129,6 +129,57 @@
       font-size: 0.95rem;
     }
     
+    .data-controller {
+      background: #f8f9fa;
+      border: 1px solid #dee2e6;
+      padding: 20px;
+      margin: 20px 0;
+      border-radius: 4px;
+    }
+    
+    .language-switcher {
+      position: fixed;
+      bottom: 30px;
+      right: 30px;
+      z-index: 1000;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      gap: 8px;
+    }
+    
+    .language-switcher-label {
+      font-size: 0.85rem;
+      color: #666;
+      font-weight: 500;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+    
+    .language-switcher-btn {
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      color: white;
+      border: none;
+      padding: 12px 24px;
+      border-radius: 50px;
+      font-size: 0.95rem;
+      font-weight: 600;
+      cursor: pointer;
+      box-shadow: 0 4px 15px rgba(102, 126, 234, 0.4);
+      transition: all 0.3s ease;
+      text-decoration: none;
+      display: inline-block;
+    }
+    
+    .language-switcher-btn:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 6px 20px rgba(102, 126, 234, 0.5);
+    }
+    
+    .language-switcher-btn:active {
+      transform: translateY(0);
+    }
+    
     @media (max-width: 768px) {
       body {
         padding: 0px;
@@ -146,20 +197,53 @@
       h2 {
         font-size: 1.2rem;
       }
+      
+      .language-switcher {
+        bottom: 20px;
+        right: 20px;
+      }
+      
+      .language-switcher-btn {
+        padding: 10px 20px;
+        font-size: 0.9rem;
+      }
+      
+      .language-switcher-label {
+        font-size: 0.75rem;
+      }
     }
   </style>
 </head>
 <body>
   <div class="container">
     <div class="header">
-      <h1>LupaQR – Terms and Conditions</h1>
-      <div class="effective-date"><strong>Effective Date:</strong> July 2, 2025</div>
+      <h1>LupaQR – Terms and Conditions/EULA</h1>
+      <div class="effective-date"><strong>Effective Date:</strong> July 23, 2025<br><strong>Last Updated:</strong> November 17, 2025<br><strong>Current Version:</strong> 1.0</div>
     </div>
     
-    <h2>1. Purpose of the App</h2>
+    <h2>1. Ownership and Contact</h2>
+    <p>This application ("LupaQR") is owned by:</p>
+    <div class="data-controller">
+      <p><strong>Panther Inversions 2016 SLU</strong></p>
+      <p><strong>Address:</strong> Carrer Prat de la Creu 59-65, Edifici C, 2nd floor, AD500 Andorra</p>
+      <p><strong>Email:</strong> <a href="mailto:info@panther.ad">info@panther.ad</a></p>
+      <p><strong>Website:</strong> <a href="http://www.panther.ad" target="_blank">www.panther.ad</a></p>
+    </div>
+    
+    <h2>2. Nature and Purpose of the Service</h2>
     <p>LupaQR is a utility application designed to scan and decode QR codes and barcodes for personal, non-commercial use.</p>
     
-    <h2>2. User Responsibility</h2>
+    <h2>3. Conditions of Use</h2>
+    <p>By using LupaQR, you agree to:</p>
+    <ul>
+      <li>Use the app only for lawful, personal purposes.</li>
+      <li>Not exploit or misuse any features of the app for commercial gain without prior written consent.</li>
+      <li>Follow all applicable local, national, and international laws while using the app.</li>
+      <li>Avoid actions that may damage, disable, or impair the functioning of the app or interfere with other users.</li>
+    </ul>
+    <p>Use of the app is free, unless otherwise offered under paid subscriptions on App Store or Google Play.</p>
+    
+    <h2>4. User Responsibility</h2>
     <p>You are solely responsible for:</p>
     <ul>
       <li>How you use the scanned results.</li>
@@ -167,7 +251,45 @@
       <li>Exercising caution when visiting unknown or untrusted links.</li>
     </ul>
     
-    <h2>3. Acceptable Use</h2>
+    <h2>5. Subscriptions and In-App Purchases</h2>
+    
+    <h3>5.1 Trial Period</h3>
+    <p>All new users receive a 3-day free trial with access to all premium features, including unlimited scanning.</p>
+    <p>If not canceled during the trial period, the subscription automatically renews into a paid monthly plan.</p>
+    <p>Users may cancel before the end of the trial to avoid being charged.</p>
+    
+    <h3>5.2 Subscription Types</h3>
+    <p><strong>Monthly Plan:</strong> Unlocks full access to Scanning, code history, and generating codes.</p>
+    <p>There are currently no other subscription tiers. Any changes will be communicated via the app.</p>
+    
+    <h3>5.3 Subscription Periods</h3>
+    <ul>
+      <li><strong>Free Trial:</strong> 3 days</li>
+      <li><strong>Monthly Plan:</strong> 1-month recurring</li>
+    </ul>
+    <p>Pricing is shown in local currency and includes applicable taxes/VAT.</p>
+    
+    <h3>5.4 Payment and Renewal</h3>
+    <p>All payments are securely handled through Apple or Google In-App Purchases.</p>
+    <p>Your Apple ID or Google Account will be charged upon confirmation.</p>
+    <p>Subscriptions automatically renew unless canceled at least 24 hours before the end of the billing period.</p>
+    <p>You may manage or cancel your subscription from your device:</p>
+    <ul>
+      <li><strong>Apple:</strong> Settings → Apple ID → Subscriptions</li>
+      <li><strong>Android:</strong> Google Play → Subscriptions</li>
+    </ul>
+    <p>If canceled, you retain access to premium features until the end of the current billing cycle or trial.</p>
+    
+    <h3>5.5 Upgrading and Downgrading</h3>
+    <p>LupaQR currently offers a single subscription tier.</p>
+    <p>If new plans are introduced, users who upgrade will gain immediate access to new features.</p>
+    <p>Downgrades take effect after the current billing cycle ends.</p>
+    <p>No refunds or partial credits are offered for unused time.</p>
+    
+    <h3>5.6 Restore Purchases</h3>
+    <p>Subscriptions can be restored across devices using the same Apple ID or Google account via the "Restore Purchase" button on the paywall.</p>
+    
+    <h2>6. Acceptable Use</h2>
     <p>You agree not to use LupaQR:</p>
     <ul>
       <li>For any unlawful, illegal, or malicious activity.</li>
@@ -175,41 +297,50 @@
       <li>To attempt to reverse engineer, tamper with, or disrupt the app.</li>
     </ul>
     
-    <h2>4. Third-Party Content</h2>
-    <p>LupaQR does not control or endorse any third-party content accessed through scanned codes. We disclaim all liability for the accuracy, legality, or safety of such content.</p>
+    <h2>7. Intellectual Property</h2>
+    <p>All content, design, models, and source code are the intellectual property of Panther Inversions 2016 SLU or its partners (including OpenAI).</p>
+    <p>Reproduction, scraping, or redistribution without written permission is prohibited.</p>
     
-    <h2>5. No Warranty</h2>
-    <div class="warning-box">
-      <p>LupaQR is provided "as is" without warranties of any kind, whether express or implied. We do not guarantee uninterrupted operation or error-free scanning. You use the app at your own risk.</p>
-    </div>
-    
-    <h2>6. Limitation of Liability</h2>
+    <h2>8. Limitation of Liability</h2>
     <p>To the fullest extent permitted by law:</p>
     <ul>
       <li>Panther Inversions 2016 SLU shall not be liable for any direct, indirect, incidental, consequential, or punitive damages arising from your use of LupaQR.</li>
     </ul>
-    
     <div class="legal-note">
       <p><strong>Important:</strong> Nothing in these Terms excludes liability for death or personal injury caused by negligence, fraud, or any liability that cannot be excluded under applicable law.</p>
     </div>
+    <p>Use of the app is entirely at your own risk.</p>
     
-    <h2>7. Termination</h2>
+    <h2>9. Third-Party Content</h2>
+    <p>LupaQR does not control or endorse any third-party content accessed through scanned codes. We disclaim all liability for the accuracy, legality, or safety of such content.</p>
+    
+    <h2>10. No Warranty</h2>
+    <div class="warning-box">
+      <p>LupaQR is provided "as is" without warranties of any kind, whether express or implied. We do not guarantee uninterrupted operation or error-free scanning. You use the app at your own risk.</p>
+    </div>
+    
+    <h2>11. Termination</h2>
     <p>You may terminate these Terms by uninstalling the app. We reserve the right to take appropriate legal measures, restrict distribution, or request removal of the app from devices via app stores if you breach these Terms or engage in unlawful use.</p>
     
-    <h2>8. Changes to Terms</h2>
+    <h2>12. Changes to Terms</h2>
     <p>We may update these Terms periodically. For material changes, we will notify you through the app or by other appropriate means. Your continued use after such notice means you accept the updated Terms.</p>
     
-    <h2>9. Export Compliance</h2>
+    <h2>13. Export Compliance</h2>
     <p>You agree not to use or export LupaQR in violation of applicable export control laws and regulations.</p>
     
-    <h2>10. Governing Law and Jurisdiction</h2>
+    <h2>14. Governing Law and Jurisdiction</h2>
     <p>These Terms are governed by the laws applicable in your country of residence, without prejudice to any mandatory consumer protections. Any disputes may be brought before the competent courts in your jurisdiction.</p>
     
     <div class="contact-box">
-      <h2>11. Contact Us</h2>
-      <p>For any questions about these Terms, please contact us:</p>
-      <p><strong>Email:</strong> <a href="mailto:info@panther.ad">info@panther.ad</a></p>
+      <h2>15. Contact</h2>
+      <p>For questions or concerns about these Terms, please contact:</p>
+      <p><strong>📧 Email:</strong> <a href="mailto:info@panther.ad">info@panther.ad</a></p>
     </div>
+  </div>
+  
+  <div class="language-switcher">
+    <span class="language-switcher-label">Switch To</span>
+    <a href="terms-es.html" class="language-switcher-btn">Español</a>
   </div>
 </body>
 </html>

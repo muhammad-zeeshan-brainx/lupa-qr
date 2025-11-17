@@ -55,7 +55,7 @@
       font-weight: 600;
       margin: 25px 0 15px 0;
       padding-bottom: 5px;
-      
+      border-bottom: 1px solid #e0e0e0;
     }
     
     h2:first-of-type {
@@ -128,6 +128,49 @@
       border-radius: 4px;
     }
     
+    .language-switcher {
+      position: fixed;
+      bottom: 30px;
+      right: 30px;
+      z-index: 1000;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      gap: 8px;
+    }
+    
+    .language-switcher-label {
+      font-size: 0.85rem;
+      color: #666;
+      font-weight: 500;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+    
+    .language-switcher-btn {
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      color: white;
+      border: none;
+      padding: 12px 24px;
+      border-radius: 50px;
+      font-size: 0.95rem;
+      font-weight: 600;
+      cursor: pointer;
+      box-shadow: 0 4px 15px rgba(102, 126, 234, 0.4);
+      transition: all 0.3s ease;
+      text-decoration: none;
+      display: inline-block;
+    }
+    
+    .language-switcher-btn:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 6px 20px rgba(102, 126, 234, 0.5);
+    }
+    
+    .language-switcher-btn:active {
+      transform: translateY(0);
+    }
+    
     @media (max-width: 768px) {
       body {
         padding: 0px;
@@ -145,6 +188,20 @@
       h2 {
         font-size: 1.2rem;
       }
+      
+      .language-switcher {
+        bottom: 20px;
+        right: 20px;
+      }
+      
+      .language-switcher-btn {
+        padding: 10px 20px;
+        font-size: 0.9rem;
+      }
+      
+      .language-switcher-label {
+        font-size: 0.75rem;
+      }
     }
   </style>
 </head>
@@ -152,7 +209,7 @@
   <div class="container">
     <div class="header">
       <h1>LupaQR – Privacy Policy</h1>
-      <div class="effective-date"><strong>Effective Date:</strong> July 2, 2025</div>
+      <div class="effective-date"><strong>Effective Date:</strong> July 23, 2025<br><strong>Last Updated:</strong> November 13, 2025<br><strong>Current Version:</strong> 1.1</div>
     </div>
     
     <h2>1. Introduction</h2>
@@ -186,26 +243,60 @@
     <p>We do not share, sell, or transfer personal data to third parties. No data leaves your device.</p>
     <p>If you choose to open a scanned link, you will be redirected to external websites. Those websites are not controlled by LupaQR and have their own privacy practices.</p>
     
-    <h2>6. Your Rights</h2>
+    <h2>6. Cookies and Tracking</h2>
+    <p>LupaQR does not use:</p>
+    <ul>
+      <li>Cookies</li>
+      <li>Third-party analytics SDKs</li>
+      <li>Advertising or marketing trackers</li>
+    </ul>
+    <p>Your use of the app is anonymous and unmonitored by the app provider.</p>
+    
+    <h2>7. In-App Purchases and Subscription Handling</h2>
+    <p>LupaQR offers a Monthly Subscription Plan, processed securely via Apple or Google In-App Purchases. We do not store or process your payment information.</p>
+    
+    <h3>Subscription Terms:</h3>
+    <ul>
+      <li><strong>Free Trial:</strong> All new users receive a 3-day free trial. Full access is granted during the trial period.</li>
+      <li><strong>Auto-Renewal:</strong> If not canceled during the trial, the subscription automatically renews to a Monthly Plan.</li>
+      <li><strong>Billing:</strong> Payment is charged to your Apple ID or Google account at confirmation. Subscription renews automatically unless canceled at least 24 hours before the end of the billing period.</li>
+      <li><strong>Prices:</strong> Subscription fees are shown in your local currency and include any applicable taxes. Prices are determined by Apple/Google store regions.</li>
+    </ul>
+    
+    <h3>Cancellation & Management:</h3>
+    <ul>
+      <li><strong>On Apple devices:</strong> Settings → Apple ID → Subscriptions</li>
+      <li><strong>On Android devices:</strong> Google Play → Profile → Payments & Subscriptions</li>
+    </ul>
+    
+    <p><strong>Refunds:</strong> All refund requests are subject to Apple or Google policies. LupaQR does not issue direct refunds or partial credits.</p>
+    <p><strong>Restore:</strong> Purchases can be restored on other devices using the same Apple ID or Google account.</p>
+    
+    <h2>8. Your Rights</h2>
     <p>Depending on your location, you may have rights under applicable privacy laws, including the rights to access, correct, delete, or restrict your personal data.</p>
     <div class="important-note">
       <p><strong>Please note:</strong> LupaQR does not collect, store, or process any personal data on our servers. If you contact us to exercise these rights, we will confirm that no personal data is retained by us.</p>
     </div>
     
-    <h2>7. Children's Privacy</h2>
+    <h2>9. Children's Privacy</h2>
     <p>LupaQR is not intended for use by children under 13 years of age. We do not knowingly collect personal data from children. If you believe a child has provided personal information, please contact us, and we will promptly delete it.</p>
     
-    <h2>8. Security Measures</h2>
+    <h2>10. Security Measures</h2>
     <p>We use appropriate safeguards to protect your information. All scanned data is processed only in your device's memory and is never stored on our servers.</p>
     
-    <h2>9. Updates to This Policy</h2>
+    <h2>11. Updates to This Policy</h2>
     <p>We may update this Privacy Policy from time to time. For material changes, we will notify you through the app or by other appropriate means. Your continued use after such notice means you accept the updated Policy.</p>
     
     <div class="contact-box">
-      <h2>10. Contact Us</h2>
+      <h2>12. Contact Us</h2>
       <p>If you have questions or concerns about this Privacy Policy or your rights, please contact us:</p>
       <p><strong>Email:</strong> <a href="mailto:info@panther.ad">info@panther.ad</a></p>
     </div>
+  </div>
+  
+  <div class="language-switcher">
+    <span class="language-switcher-label">Switch To</span>
+    <a href="privacy-es.html" class="language-switcher-btn">Español</a>
   </div>
 </body>
 </html>

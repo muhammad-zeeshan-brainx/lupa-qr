@@ -55,7 +55,7 @@
       font-weight: 600;
       margin: 25px 0 15px 0;
       padding-bottom: 5px;
-      
+      border-bottom: 1px solid #e0e0e0;
     }
     
     h2:first-of-type {
@@ -128,6 +128,49 @@
       border-radius: 4px;
     }
     
+    .language-switcher {
+      position: fixed;
+      bottom: 30px;
+      right: 30px;
+      z-index: 1000;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      gap: 8px;
+    }
+    
+    .language-switcher-label {
+      font-size: 0.85rem;
+      color: #666;
+      font-weight: 500;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+    
+    .language-switcher-btn {
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      color: white;
+      border: none;
+      padding: 12px 24px;
+      border-radius: 50px;
+      font-size: 0.95rem;
+      font-weight: 600;
+      cursor: pointer;
+      box-shadow: 0 4px 15px rgba(102, 126, 234, 0.4);
+      transition: all 0.3s ease;
+      text-decoration: none;
+      display: inline-block;
+    }
+    
+    .language-switcher-btn:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 6px 20px rgba(102, 126, 234, 0.5);
+    }
+    
+    .language-switcher-btn:active {
+      transform: translateY(0);
+    }
+    
     @media (max-width: 768px) {
       body {
         padding: 0px;
@@ -144,6 +187,20 @@
       
       h2 {
         font-size: 1.2rem;
+      }
+      
+      .language-switcher {
+        bottom: 20px;
+        right: 20px;
+      }
+      
+      .language-switcher-btn {
+        padding: 10px 20px;
+        font-size: 0.9rem;
+      }
+      
+      .language-switcher-label {
+        font-size: 0.75rem;
       }
     }
   </style>
@@ -186,26 +243,60 @@
     <p>No compartimos, vendemos ni transferimos datos personales a terceros. Ningún dato sale de su dispositivo.</p>
     <p>Si decide abrir un enlace escaneado, será redirigido a sitios web externos. LupaQR no controla dichos sitios y estos tienen sus propias políticas de privacidad.</p>
     
-    <h2>6. Sus Derechos</h2>
+    <h2>6. Cookies y Seguimiento</h2>
+    <p>LupaQR no utiliza:</p>
+    <ul>
+      <li>Cookies</li>
+      <li>SDKs de análisis de terceros</li>
+      <li>Rastreadoras de publicidad o marketing</li>
+    </ul>
+    <p>Tu uso de la aplicación es anónimo y no es monitoreado por el proveedor de la app.</p>
+    
+    <h2>7. Compras dentro de la App y Gestión de Suscripciones</h2>
+    <p>LupaQR ofrece un Plan de Suscripción Mensual, procesado de forma segura a través de Apple o Google In-App Purchases. No almacenamos ni procesamos tu información de pago.</p>
+    
+    <h3>Términos de la Suscripción:</h3>
+    <ul>
+      <li><strong>Prueba gratuita:</strong> Todos los usuarios nuevos reciben una prueba gratuita de 3 días. Durante este período se concede acceso completo.</li>
+      <li><strong>Renovación automática:</strong> Si no se cancela durante la prueba, la suscripción se renueva automáticamente al Plan Mensual.</li>
+      <li><strong>Facturación:</strong> El pago se carga a tu Apple ID o cuenta de Google al confirmar la suscripción. La suscripción se renueva automáticamente salvo que se cancele al menos 24 horas antes del final del período de facturación.</li>
+      <li><strong>Precios:</strong> Las tarifas de suscripción se muestran en la moneda local e incluyen los impuestos aplicables. Los precios se determinan según la región de la tienda de Apple/Google.</li>
+    </ul>
+    
+    <h3>Cancelación y Gestión:</h3>
+    <ul>
+      <li><strong>En dispositivos Apple:</strong> Configuración → Apple ID → Suscripciones</li>
+      <li><strong>En dispositivos Android:</strong> Google Play → Perfil → Pagos y Suscripciones</li>
+    </ul>
+    
+    <p><strong>Reembolsos:</strong> Todas las solicitudes de reembolso están sujetas a las políticas de Apple o Google. LupaQR no emite reembolsos directos ni créditos parciales.</p>
+    <p><strong>Restaurar compras:</strong> Las compras pueden restaurarse en otros dispositivos usando la misma Apple ID o cuenta de Google.</p>
+    
+    <h2>8. Sus Derechos</h2>
     <p>Dependiendo de su ubicación, puede tener derechos en virtud de las leyes de privacidad aplicables, incluidos los derechos de acceder, rectificar, eliminar o restringir el tratamiento de sus datos personales.</p>
     <div class="important-note">
       <p><strong>Tenga en cuenta:</strong> LupaQR no recopila, almacena ni procesa datos personales en nuestros servidores. Si se pone en contacto con nosotros para ejercer estos derechos, confirmaremos que no conservamos ningún dato personal.</p>
     </div>
     
-    <h2>7. Privacidad de los Menores</h2>
+    <h2>9. Privacidad de los Menores</h2>
     <p>LupaQR no está diseñado para su uso por menores de 13 años. No recopilamos intencionadamente datos personales de niños. Si cree que un menor nos ha proporcionado información personal, póngase en contacto con nosotros y la eliminaremos de inmediato.</p>
     
-    <h2>8. Medidas de Seguridad</h2>
+    <h2>10. Medidas de Seguridad</h2>
     <p>Implementamos medidas de seguridad adecuadas para proteger su información. Todos los datos escaneados se procesan únicamente en la memoria de su dispositivo y nunca se almacenan en nuestros servidores.</p>
     
-    <h2>9. Actualizaciones de esta Política</h2>
+    <h2>11. Actualizaciones de esta Política</h2>
     <p>Podemos actualizar esta Política de Privacidad periódicamente. En caso de cambios importantes, le notificaremos a través de la aplicación u otros medios apropiados. Su uso continuado después de dicha notificación implica que acepta la Política actualizada.</p>
     
     <div class="contact-box">
-      <h2>10. Contacto</h2>
+      <h2>12. Contacto</h2>
       <p>Si tiene preguntas o inquietudes sobre esta Política de Privacidad o sobre sus derechos, póngase en contacto con nosotros:</p>
       <p><strong>Correo electrónico:</strong> <a href="mailto:info@panther.ad">info@panther.ad</a></p>
     </div>
+  </div>
+  
+  <div class="language-switcher">
+    <span class="language-switcher-label">Cambiar a</span>
+    <a href="privacy-en.html" class="language-switcher-btn">English</a>
   </div>
 </body>
 </html>
